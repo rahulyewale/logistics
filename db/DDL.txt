@@ -1,0 +1,31 @@
+CREATE TABLE order_details
+(
+  order_details_id bigint NOT NULL,
+  sr_no bigint,
+  booking_date character varying,
+  company_name character varying,
+  pincode character varying,
+  state character varying,
+  document_no character varying,
+  service character varying,
+  mode character varying,
+  invoice_no character varying,
+  invoice_value character varying,
+  package_count bigint,
+  dimensions character varying,
+  rieter_weight bigint,
+  fedex_weight bigint,
+  status character varying,
+  delay_reason character varying,
+  address character varying,
+  created_by character varying,
+  created_date timestamp without time zone,
+  modified_by character varying,
+  modified_date timestamp without time zone,
+  CONSTRAINT order_details_pkey PRIMARY KEY (order_details_id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE expense
+  OWNER TO postgres;
