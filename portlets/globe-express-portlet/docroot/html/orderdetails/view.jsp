@@ -1,5 +1,4 @@
-<%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
+<%@include file="../common/common-include.jsp" %>
 
-<portlet:defineObjects />
+<liferay-portlet:actionURL name="loadOrderDetails" var="loadOrderDetailsURL" windowState="normal"></liferay-portlet:actionURL>
 
-This is the <b>Order Details</b> portlet in View mode.
